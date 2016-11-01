@@ -1,8 +1,13 @@
 title: MarkShow ReadMe.md
+
 speaker: 十八赞
+
 url: http://github.com/BlankRain
+
 transition: slide3
+
 files: /js/jy.js,/css/jy.css,/js/zoom.js
+
 theme: moon
 
 [幻片]
