@@ -60,9 +60,9 @@ nodePPT - This is probably the best web presentation tool so far!
 ```
 
 ```bash
-nodeppt start -p 8090 -d path/for/ppts
+nodeppt start -p 8090 -d path/for/markshowppts
 # bind host, default value: (0.0.0.0)
-nodeppt start -p 8080 -d path/for/ppts -H 127.0.0.1
+nodeppt start -p 8080 -d path/for/markshowppts -H 127.0.0.1
 # socket (type 'Q' to show/hide QR Code, use your phone scan it, and you can control the slider)
 # if your want to use socket, notice the follow:
 		* 1, make sure that your phone and your pc/mac is allowed to access to each other
@@ -123,9 +123,9 @@ nodeppt generate -h
 nodeppt generate filepath
 # export all project file, include js, img, css folder
 # export to publish folder default
-nodeppt generate ./ppts/demo.md -a
+nodeppt generate ./markshowppts/demo.md -a
 # export to given folder
-nodeppt generate ./ppts/demo.md -a -o output/path
+nodeppt generate ./markshowppts/demo.md -a -o output/path
 
 export all ppt file and generate ppt list index:
 ```bash
@@ -247,9 +247,9 @@ use ```data-src``` as the url of the iframe, the iframe will not load the conten
 ```
 
 #### example
-for more go to ppts/demo.md
+for more go to markshowppts/demo.md
 
-To see more demo, check the ```ppts``` folder
+To see more demo, check the ```markshowppts``` folder
 
 ### help
 

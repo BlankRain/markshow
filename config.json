@@ -2,6 +2,6 @@
     "url": "https://github.com/BlankRain/",
     "speaker": "markshow demo",
     "assetsDir": "./assets",
-    "pptDir": "~/ppts",
+    "pptDir": "~/markshowppts",
     "port": 9527
 }

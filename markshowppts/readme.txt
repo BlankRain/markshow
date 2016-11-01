@@ -1,1 +1,1 @@
-copy this  dir as your '~/ppts',then your ppt workspace is '~/ppts'
+copy this  dir as your '~/markshowppts',then your ppt workspace is '~/markshowppts'
