@@ -9,7 +9,7 @@
     "email": "731014656@qq.com"
   },
   "bin": {
-    "nodeppt": "bin/markshow"
+    "markshow": "bin/markshow"
   },
   "repository": {
     "type": "git",
