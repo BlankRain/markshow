@@ -1,0 +1,54 @@
+upstream {
+    #  markshow-dockerserver 172.17.1.2:9527;
+     markshow-dockerserver ${yourdockerip};
+}
+
+server {
+	listen 80 ;
+
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+
+	server_name ${ppt.yourdomain.com};
+
+	location / {
+	    proxy_set_header   X-Forwarded-Proto $scheme;
+            proxy_set_header   Host              $http_host;
+            proxy_set_header   X-Real-IP         $remote_addr;
+	    proxy_pass http://markshow-dockerserver/md/${yourfile}.md ;
+	}
+
+	location /css/ {
+            proxy_set_header   X-Forwarded-Proto $scheme;
+            proxy_set_header   Host              $http_host;
+            proxy_set_header   X-Real-IP         $remote_addr;
+	    proxy_pass http://markshow-dockerserver/css/;
+
+	}
+	location /js/{
+            proxy_set_header   X-Forwarded-Proto $scheme;
+            proxy_set_header   Host              $http_host;
+            proxy_set_header   X-Real-IP         $remote_addr;
+            proxy_pass http://markshow-dockerserver/js/;
+	}
+
+        location /img/ {
+            proxy_set_header   X-Forwarded-Proto $scheme;
+            proxy_set_header   Host              $http_host;
+            proxy_set_header   X-Real-IP         $remote_addr;
+            proxy_pass http://markshow-dockerserver/img/;
+
+        }
+        location /fonts/{
+            proxy_set_header   X-Forwarded-Proto $scheme;
+            proxy_set_header   Host              $http_host;
+            proxy_set_header   X-Real-IP         $remote_addr;
+            proxy_pass http://markshow-dockerserver/fonts/;
+
+}
+
+
+
+
+
+}
