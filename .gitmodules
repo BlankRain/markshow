@@ -1,3 +1,6 @@
 [submodule "markshowppts"]
 	path = markshowppts
 	url = https://github.com/BlankRain/markshowppts
+[submodule "lib/gloves-js"]
+	path = lib/gloves-js
+	url = https://github.com/BlankRain/gloves-js.git
