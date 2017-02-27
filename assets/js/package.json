@@ -12,8 +12,8 @@
     "url": "https://github.com/BlankRain/markshow"
   },
   "dependencies": {
-    "rx":""
-
+    "rx":"",
+    "jquery":""
   },
   "keywords": [
     "presentation",
