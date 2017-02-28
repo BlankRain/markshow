@@ -96,6 +96,10 @@ Slide.Control.add('socket', function (S, broadcast) {
                     });
                 }
             });
+            webSocket.on('hello',function(d){
+                console.log(d);
+                console.log('worldtian');
+            });
             webSocket.on('system', function (data) {
                 switch (data.action) {
                     case 'join':
