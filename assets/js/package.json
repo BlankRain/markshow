@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "rx":"",
-    "jquery":""
+    "jquery":"",
+    "morse":""
   },
   "keywords": [
     "presentation",

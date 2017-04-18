@@ -27,7 +27,8 @@
     "read": "^1.0.7",
     "socket.io": "1.3.3",
     "github-webhook-handler":"0.6.0",
-    "rx":""
+    "rx":"",
+    "morse":""
 
   },
   "keywords": [
